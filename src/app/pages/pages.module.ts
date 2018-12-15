@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 // Rutas
 import { PagesRoutesModule } from './pages-routing.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -15,11 +16,12 @@ import { PagesRoutesModule } from './pages-routing.module';
 @NgModule({
     declarations: [
         PagesComponent,
-        DashboardComponent
+        DashboardComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,
-        PagesComponent
+        AccountSettingsComponent
     ],
     imports: [
         SharedModule,

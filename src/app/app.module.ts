@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,10 @@ import { RegisterComponent } from './login/register.component';
   ],
   imports: [
     BrowserModule,
-    // El orden de los imports importa en las rutas tenes en cuenta
+    // El orden de los imports  en las rutas tener en cuenta
     PagesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
